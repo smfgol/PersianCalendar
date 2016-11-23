@@ -1,0 +1,5 @@
+@font-face {
+    font-family: Font;
+    src: url("../fonts/Traffic.eot");
+    src: url("../fonts/Traffic?#iefix") format("eot"), url("../fonts/Traffic.woff") format("woff"), url("../fonts/Traffic.ttf") format("ttf");
+}

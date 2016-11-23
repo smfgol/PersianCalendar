@@ -1,0 +1,116 @@
+body {
+    font-family: 'Font';
+    padding: 0px;
+    margin: 0px;
+}
+
+.Calender-Header {
+    font-size: 18px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #343434;
+    padding: 15px 10px;
+    background-color: #f9f9f9;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.buttonStyle {
+    font-size: 22px;
+    padding: .3% .8%;
+    width: auto;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-right: 5px;
+    display: inline-block
+}
+
+.CalendarTitle {
+    font-size: 16px;
+    display: inline-block;
+    width: auto;
+    padding: .3% .8%;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#CalendarTable thead {
+    border-bottom: 1px solid #ccc;
+}
+
+.tableDataTd {
+    padding: .4%;
+    width: 14.28%;
+    height: 150px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+    background-color: #fcfcfc;
+    transition: .5s;
+
+}
+
+div.tableDataTd:hover {
+    background-color: #eee;
+}
+
+.TableMonth {
+    width: 25%;
+    height: 220px;
+}
+
+.tableDataTh {
+    padding: .4%;
+    width: 14.28%;
+}
+
+.PrimaryColor {
+    color: #36D7B7;
+}
+
+.SecondaryColor {
+    color: #414141;
+}
+
+#CalendarTable tbody {
+    border-right: 1px solid #ccc;
+}
+
+#CalendarTable tbody i {
+    color: #777;;
+}
+
+.TodayStyle {
+    background-color: #e9fefa;
+}
+
+.DateDetail {
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+}
+
+.EventView {
+    height: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+    float: left;
+    margin-top: 5px;
+    width: 15px;
+}
+.pointer{
+    cursor: pointer;
+}
+.DataDetailValue{
+    text-align: justify;
+    direction: rtl;
+    margin-top: -120px;
+    color:#666;
+    width: 100%;
+    height: 115px;
+}

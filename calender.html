@@ -1,0 +1,155 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/calender.css"/>
+    <link rel="stylesheet" type="text/css" href="css/persianfont.css"/>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/persian-date.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/calender.js"></script>
+
+</head>
+<body>
+<div id="CalendarPopup"
+     style="position: fixed;width: 100%; height: 100%; background-color: #0b0b0b;opacity: .95;z-index: 100;display: none">
+    <div style="width: 450px;height: auto;background-color: #fff;margin: 0 auto;padding: 15px">
+        <h4 class="bold text-center" style="padding-bottom: 10px">افزودن رویداد جدید
+            <i class="fa fa-times-circle pull-right" style="font-size: 30px;margin-top: -10px;cursor: pointer;"
+               onclick="$('#CalendarPopup').fadeOut(400)" aria-hidden="true"></i>
+        </h4>
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title PrimaryColor">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class=""
+                           aria-expanded="true">فشار خون</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in" aria-expanded="true">
+                    <div class="panel-body" style="padding: 10px">
+                        <form action="">
+                            <input id="BloodPressureDate" type="text" disabled class="form-control Selected_Date">
+                            <input id="pressure_down" style="margin-top: 10px" class="form-control" type="text"
+                                   placeholder="دیاستولیک"/>
+                            <input id="pressure_up" style="margin-top: 10px" class="form-control" type="text"
+                                   placeholder="سیستولیک"/>
+                            <button style="margin-top: 10px" class="btn btn-primary pull-left">ثبت</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title PrimaryColor">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false"
+                           class="collapsed">دیابت یا قند خون</a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                        <form action="">
+                            <input id="DiabetDate" type="text" disabled class="Selected_Date form-control">
+                            <input id="Glucose" style="margin-top: 10px" class="form-control" type="text"
+                                   placeholder="گلکوز"/>
+                            <button style="margin-top: 10px" class="btn btn-primary pull-left">ثبت</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title PrimaryColor">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed"
+                           aria-expanded="false">کلسترول</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                        <form action="">
+                            <input id="CholDate" type="text" disabled class="Selected_Date form-control">
+                            <input id="VLDL" style="margin-top: 10px" class="form-control" type="text"
+                                   placeholder="VLDL"/>
+                            <input id="HDL" style="margin-top: 10px" class="form-control" type="text"
+                                   placeholder="HDL"/>
+                            <input id="LDL" style="margin-top: 10px" class="form-control" type="text"
+                                   placeholder="LDL"/>
+                            <input id="Chol" style="margin-top: 10px" class="form-control" type="text"
+                                   placeholder="کلسترول"/>
+
+                            <button style="margin-top: 10px" class="btn btn-primary pull-left">ثبت</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title PrimaryColor">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed"
+                           aria-expanded="false">وزن</a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                        <form action="">
+                            <input id="WeightDate" type="text" disabled class="Selected_Date form-control">
+                            <input id="weight" style="margin-top: 10px" class="form-control" type="text"
+                                   placeholder="وزن"/>
+                            <button style="margin-top: 10px" class="btn btn-primary pull-left">ثبت</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title PrimaryColor">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed"
+                           aria-expanded="false">ارجاع به پزشک</a>
+                    </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                        <form action="">
+                            <input id="SendToDoctorDate" type="text" disabled class="Selected_Date form-control">
+                            <input id="SendToDoctor" style="margin-top: 10px" class="form-control" type="text"
+                                   placeholder="متن"/>
+                            <button style="margin-top: 10px" class="btn btn-primary pull-left">ثبت</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="position: absolute; width: 100%">
+    <div class="Calender-Header text-center col-lg-12 bold pull-right SecondaryColor" style="width: 100%">
+
+        <div onclick="BackCalendar()" class="buttonStyle pull-left">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </div>
+        <div onclick="NextCalendar()" class="buttonStyle pull-left">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+        <div id="CalendarTitle" class="CalendarTitle bold pull-left">
+        </div>
+        <div id="CalendarToday" onclick="ChangePosition('Today')" class="CalendarTitle bold pull-left text-center">
+            امروز
+        </div>
+        <div onclick="ChangePosition('Month')" class="CalendarTitle bold pull-right">
+            نمایش ماه
+        </div>
+        <div onclick="ChangePosition('Year')" class="CalendarTitle bold pull-right">
+            نمایش سال
+        </div>
+    </div>
+    <div id="CalendarTable" class="PrimaryColor pull-right" style="width: 100%;direction: rtl">
+        <div id="DayTitle" class="bold pull-right" style="width: 100%;border-bottom: 1px solid #ccc;padding: 7px 0px">
+        </div>
+        <div id="CalendarData" style="border-right: 1px solid #ccc;width: 100%">
+        </div>
+    </div>
+</div>
+</body>
+</html>
